@@ -1,0 +1,23 @@
+section{
+    height: 100vh;
+    background: pink;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,23rem);
+    grid-gap: 1rem;
+}
+.one{
+    background: yellow;
+    /* grid-column: 1/ span 2; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.two{
+    background: rgb(91, 91, 55);
+    /* grid-column: 1/ span 2; */
+    grid-row-start: 3;
+  
+}

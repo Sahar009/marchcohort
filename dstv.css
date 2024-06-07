@@ -1,0 +1,152 @@
+:root{
+    --secondary-color:#fff;
+    --color-pink: rgb(173, 17, 43);
+}
+/* *{
+    margin: 0;
+} */
+
+body{
+    background: url('./assets/dstv-login-bg.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width:30%;
+    height: 350px;
+    background-color: rgba(0, 132, 255, 0.43);
+
+}
+.logo{
+   display: flex;
+   justify-content: center;
+
+   
+
+}
+.logo img{
+width: 50%;
+margin-top: 10px ;
+}
+.logo h4{
+color: var(--secondary-color);
+font-weight: 100;
+margin: 0;
+}
+.logo h4 span{
+    font-weight: 900;
+}
+.drop-down{
+    background: #bce7f798;
+    width: 80%;
+    margin: auto;
+    border-radius: 30px;
+    margin-bottom: 0.7rem;
+}
+main{
+    margin-top: 1rem;
+}
+.drop-down select{
+    width: 80%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+.drop-down select option{
+    color: black;
+    text-transform: uppercase;
+}
+.drop-down input{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--secondary-color);
+    width: 60%;
+}
+.drop-down input::placeholder{
+    color: var(--secondary-color);
+}
+.fa-solid{
+padding: 0.3rem;
+}
+.info{
+    background-color: rgba(0, 0, 0, 0.807);
+    color: #fff;
+    width:150px;
+   padding: 0;
+   font-size: 13px;
+}
+.info p{
+    margin: 0;
+}
+#info{
+    display: flex;
+    justify-content: center;
+    display: none;
+    transition: 1s;
+}
+.fa-circle-info:hover .info{
+    display: block;
+}
+/* display info  */
+.fa-circle-info{
+    cursor: pointer;
+}
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.or{
+    width: 30px;
+    height: 30px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+
+
+}
+.line hr{
+    position: absolute;
+    top: 25%;
+    height: 1px;
+    width:60%;
+   z-index: -1;
+    background-color: #fff;
+    left: 20%;
+}
+.text{
+    position: relative;
+}
+.text::after, .text::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width:5rem;
+    background-color: #fff;
+}
+.text::after{
+    right: 0;
+    top: 50%;
+
+}
+
+.check{
+    height: 30px;
+    width: 30px;
+    border-radius: 1rem;
+    background: transparent;
+}
+
+input[type='checkbox']{
+    color: red;
+}

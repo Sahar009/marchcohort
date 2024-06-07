@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: black; */
+ 
+   
+}
+#timer{
+   transition: 2s ease-in;
+   display: none;
+}
+
+#scoreboard,#answerboard{
+    height: 400px;
+    width: 300px;
+    background-color: #ffc0cb95;
+    justify-content: center;
+    display: none;
+
+}
+#scoreboard button{
+    width: 150px;
+    height: 50px;
+    border-radius: 5rem;
+    background-color: rgb(216, 17, 51);
+}
+span{
+   
+    cursor: pointer;
+}
+.nav-icon{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-icon{
+        display: block;
+    }
+    .icon-2{
+        display: none;
+    }
+    
+}
