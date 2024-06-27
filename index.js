@@ -477,232 +477,221 @@
 
 // // var day = new Date().getDay()
 
-// // switch (day) {
-// //     case 1:
-// //         alert('today is monday');
-// //         break;
-// //     case 2:
-// //         alert('today is Tuesday');
-// //         break;
-// //     case 3:
-// //         alert('today is Wednesday');
-// //         break;
-// //     case 4:
-// //         alert('today is Thursday');
-// //         break;
+// // // switch (day) {
+// // //     case 1:
+// // //         alert('today is monday');
+// // //         break;
+// // //     case 2:
+// // //         alert('today is Tuesday');
+// // //         break;
+// // //     case 3:
+// // //         alert('today is Wednesday');
+// // //         break;
+// // //     case 4:
+// // //         alert('today is Thursday');
+// // //         break;
 
-// //     default:
-// //         alert('day does not exist');
-// //         break0;
+// // //     default:
+// // //         alert('day does not exist');
+// // //         break0;
+// // // }
+
+
+// // // ternary operator
+
+
+// // // const age = 20
+
+// // // if(age > 18){
+// // //     alert('age is greater than 18')
+// // // }else{
+// // //     alert('age is less than 18')
+// // // }
+// // //ternary
+// // // age > 18 ? alert('age is greater than 18'): age == 18 ? alert('you are 18 years'):alert('age is less than 18')
+
+
+// // // Loops
+// // // console.log('hello world')
+
+// // // for(let text = 0; text > -5; text--){
+// // // console.log(text)
+// // // }
+
+// // // for (declaration, condition, iteration){
+
+// // // }
+
+// // //print out numbers from 25 - 100
+
+// // for(let number = 25; number <= 100; number++){
+// //   if(number % 2 == 0 && number % 3 == 0){
+// //     console.log(number);
+// //   }
+// // }
+
+// // var goodPeople = ['ade','cassandra','Elizabeth']
+
+// // for (names in goodPeople){
+// //    console.log(goodPeople[names] + '50000');
+
+// // }
+
+// // var numbers = [1,2,3,4,5,6]
+
+// // for(items in numbers){
+// //     console.log(numbers[items] * 2);
+// // }
+
+// // var stringss = 'taiye'
+// // for(items in stringss){
+// //     console.log(stringss[items] +'hello');
+// // }
+
+// // var emails = ['nameone@Mail.com','mail2@mail.com','mail3@mail.com']
+
+
+// // for (mails in emails){
+// //     console.log(emails[mails] + 'hello how are you');
 // // }
 
 
-// // ternary operator
+// // //DOM Document object model
+// // //selecting
+// // //1.using ID
+// // //2.CLASSNAME
+// // //3.tagnames
+// // //4.queryselector
+// // //5.queryselectorAll
+
+// // // var text =document.getElementById('text')
+// // // var bird = document.getElementsByClassName('bird')
+
+// // // var h1 = document.getElementsByTagName('h1')
+// // // console.log(h1);
+// // // var bird2 = document.querySelector('span')
+// // // console.log(bird2);
+// // // var list= document.querySelectorAll('h1')
+
+// // // var text = document.getElementById('text')
+// // // var word = document.querySelector('.word')
+
+// // var QuestionBank =[
+// //   {
+// //     question:'who is the CEO Of APPCLICK??',
+// //     options: ['seyi Adeleke','Osimhen','Paul Pogba','Obasanjo'],
+// //     answer:'seyi Adeleke'
+// //   },
+// //   {
+// //     question:'who is President of Nigeria',
+// //     options: ['Obasnjo','Thomas muller','Bola Ahmed Tinubu','Moses Isreal'],
+// //     answer:'Bola Ahmed Tinubu'
+// //   },
+// //   {
+// //     question:'what is the capital Germany',
+// //     options: ['Zurich','Munich','Lagos','Berlin'],
+// //     answer:'Berlin'
+// //   }
+// // ]
 
 
-// // const age = 20
+// // var timer = document.getElementById('timer')
+// // // text.innerHTML ='i love football'
+// // // word.innerText ='i hate football'
+// // var btn = document.getElementById('btn')
+// // var question = document.getElementById('question')
+// // var option0 = document.getElementById('option0')
+// // var option1 = document.getElementById('option1')
+// // var stat = document.querySelector('.stat')
+// // var i = 0
+// // var scoreBoard = document.getElementById('scoreboard')
+// // var answerboard =document.getElementById('answerboard')
+// // var score = 0
 
-// // if(age > 18){
-// //     alert('age is greater than 18')
-// // }else{
-// //     alert('age is less than 18')
+// // function DisplayQuestion(){
+// //   question.innerHTML = QuestionBank[i].question
+// // option0.innerHTML = QuestionBank[i].options[0]
+// // option1.innerHTML = QuestionBank[i].options[1]
+
+// // stat.innerHTML = `question ${i+1} of ${QuestionBank.length}`
 // // }
-// //ternary
-// // age > 18 ? alert('age is greater than 18'): age == 18 ? alert('you are 18 years'):alert('age is less than 18')
 
+// // function nextQuestion(){
+// //   if(i < QuestionBank.length -1){
+// //   i++
+// //   console.log(i);
+// //   DisplayQuestion()
+// //   }
+// //   else{
+// //     scoreBoard.style.display ='block'
+// //     document.querySelector('.quizContainer').style.display ='none'
+// //   }
+// //   }
 
-// // Loops
-// // console.log('hello world')
+// // btn.addEventListener('click',nextQuestion)
 
-// // for(let text = 0; text > -5; text--){
-// // console.log(text)
+// // // setInterval(nextQuestion,10000)
+
+// // function BackToQuiz(){
+// //   window.location.reload()
 // // }
 
-// // for (declaration, condition, iteration){
+
+
+// // //1. function
+// // //2.increment score
+// // //3.color
+
+// // function calculateScore(userClickedAnswer){
+// //   // QuestionBank[i].answer
+// // //  console.log( userClickedAnswer.innerHTML );
+// // //validation
+// // if(userClickedAnswer.innerHTML === QuestionBank[i].answer  ){
+// //   score =score+1
+// //   var optionID=document.getElementById(userClickedAnswer.id).style.backgroundColor='green'
+
+// // }
+// // else{
+// //   document.getElementById(userClickedAnswer.id).style.backgroundColor='pink'
+// //   // score =score-0.5
+// // }
+// // // setTimeout(nextQuestion,2000)
 
 // // }
 
-// //print out numbers from 25 - 100
 
-// for(let number = 25; number <= 100; number++){
-//   if(number % 2 == 0 && number % 3 == 0){
-//     console.log(number);
-//   }
-// }
-
-// var goodPeople = ['ade','cassandra','Elizabeth']
-
-// for (names in goodPeople){
-//    console.log(goodPeople[names] + '50000');
-
-// }
-
-// var numbers = [1,2,3,4,5,6]
-
-// for(items in numbers){
-//     console.log(numbers[items] * 2);
-// }
-
-// var stringss = 'taiye'
-// for(items in stringss){
-//     console.log(stringss[items] +'hello');
-// }
-
-// var emails = ['nameone@Mail.com','mail2@mail.com','mail3@mail.com']
+// // function checkAnswer(){
+// //   scoreBoard.style.display='none'
+// //   answerboard.style.display='block'
 
 
-// for (mails in emails){
-//     console.log(emails[mails] + 'hello how are you');
-// }
-
-
-// //DOM Document object model
-// //selecting
-// //1.using ID
-// //2.CLASSNAME
-// //3.tagnames
-// //4.queryselector
-// //5.queryselectorAll
-
-// // var text =document.getElementById('text')
-// // var bird = document.getElementsByClassName('bird')
-
-// // var h1 = document.getElementsByTagName('h1')
-// // console.log(h1);
-// // var bird2 = document.querySelector('span')
-// // console.log(bird2);
-// // var list= document.querySelectorAll('h1')
-
-// // var text = document.getElementById('text')
-// // var word = document.querySelector('.word')
-
-// var QuestionBank =[
-//   {
-//     question:'who is the CEO Of APPCLICK??',
-//     options: ['seyi Adeleke','Osimhen','Paul Pogba','Obasanjo'],
-//     answer:'seyi Adeleke'
-//   },
-//   {
-//     question:'who is President of Nigeria',
-//     options: ['Obasnjo','Thomas muller','Bola Ahmed Tinubu','Moses Isreal'],
-//     answer:'Bola Ahmed Tinubu'
-//   },
-//   {
-//     question:'what is the capital Germany',
-//     options: ['Zurich','Munich','Lagos','Berlin'],
-//     answer:'Berlin'
-//   }
-// ]
-
-
-// var timer = document.getElementById('timer')
-// // text.innerHTML ='i love football'
-// // word.innerText ='i hate football'
-// var btn = document.getElementById('btn')
-// var question = document.getElementById('question')
-// var option0 = document.getElementById('option0')
-// var option1 = document.getElementById('option1')
-// var stat = document.querySelector('.stat')
-// var i = 0
-// var scoreBoard = document.getElementById('scoreboard')
-// var answerboard =document.getElementById('answerboard')
-// var score = 0
-
-// function DisplayQuestion(){
-//   question.innerHTML = QuestionBank[i].question
-// option0.innerHTML = QuestionBank[i].options[0]
-// option1.innerHTML = QuestionBank[i].options[1]
-
-// stat.innerHTML = `question ${i+1} of ${QuestionBank.length}`
-// }
-
-// function nextQuestion(){
-//   if(i < QuestionBank.length -1){
-//   i++
-//   console.log(i);
-//   DisplayQuestion()
-//   }
-//   else{
-//     scoreBoard.style.display ='block'
-//     document.querySelector('.quizContainer').style.display ='none'
-//   }
-//   }
-
-// btn.addEventListener('click',nextQuestion)
-
-// // setInterval(nextQuestion,10000)
-
-// function BackToQuiz(){
-//   window.location.reload()
-// }
-
-
-
-// //1. function
-// //2.increment score
-// //3.color
-
-// function calculateScore(userClickedAnswer){
-//   // QuestionBank[i].answer
-// //  console.log( userClickedAnswer.innerHTML );
-// //validation
-// if(userClickedAnswer.innerHTML === QuestionBank[i].answer  ){
-//   score =score+1
-//   var optionID=document.getElementById(userClickedAnswer.id).style.backgroundColor='green'
-
-// }
-// else{
-//   document.getElementById(userClickedAnswer.id).style.backgroundColor='pink'
-//   // score =score-0.5
-// }
-// // setTimeout(nextQuestion,2000)
-
-// }
-
-
-// function checkAnswer(){
-//   scoreBoard.style.display='none'
-//   answerboard.style.display='block'
-
-
-//   for( var num = 0;num< QuestionBank.length;num++){
-//    var createdList = document.createElement('li')
-//    createdList.innerHTML =QuestionBank[num].answer
-//   // console.log(createdList.innerHTML);
-//   // answerboard.appendChild(createdList)
-//   document.querySelector('.ol').appendChild(createdList)
+// //   for( var num = 0;num< QuestionBank.length;num++){
+// //    var createdList = document.createElement('li')
+// //    createdList.innerHTML =QuestionBank[num].answer
+// //   // console.log(createdList.innerHTML);
+// //   // answerboard.appendChild(createdList)
+// //   document.querySelector('.ol').appendChild(createdList)
   
-//   }
-// }
-
-
-// // function add(x,y){
-// //    console.log(x,y)
+// //   }
 // // }
-// // add()
-// // ...
+
+
+// // // function add(x,y){
+// // //    console.log(x,y)
+// // // }
+// // // add()
+// // // ...
 
 
 
 
 
-// DisplayQuestion()
+// // DisplayQuestion()
 
 
-// // var image = document.querySelector('.image')
-// // console.log(image)
-// // image.setAttribute('src',QuestionBank[0].img)
-
-
-
-
-
-
-
-
-
-
-
+// // // var image = document.querySelector('.image')
+// // // console.log(image)
+// // // image.setAttribute('src',QuestionBank[0].img)
 
 
 
@@ -714,117 +703,201 @@
 
 
 
-// function clock(){
-//  var date = new Date()
-// var Hours =date.getHours()
-// var minute =date.getMinutes()
-// var sec = date.getSeconds()
-// var richard = 0
 
-// timer.innerHTML = `${Hours} : ${minute} : ${sec}`
-// timer.style.color ='green'
-// if (Hours >= 13 && minute > 2){
-//   timer.style.color ='red'
-// }
 
-// // timer.innerHTML = `${richard} : ${sec}`
-// // if (sec === 60){
-// //  richard + 1
+
+
+
+
+
+
+
+
+
+// // function clock(){
+// //  var date = new Date()
+// // var Hours =date.getHours()
+// // var minute =date.getMinutes()
+// // var sec = date.getSeconds()
+// // var richard = 0
+
+// // timer.innerHTML = `${Hours} : ${minute} : ${sec}`
+// // timer.style.color ='green'
+// // if (Hours >= 13 && minute > 2){
+// //   timer.style.color ='red'
 // // }
-// }
 
-// clock()
+// // // timer.innerHTML = `${richard} : ${sec}`
+// // // if (sec === 60){
+// // //  richard + 1
+// // // }
+// // }
 
-// setInterval(clock,1000)
+// // clock()
+
+// // setInterval(clock,1000)
 
 
-// btn.addEventListener('click',function(){
-// timer.style.display='block'
-// })
+// // btn.addEventListener('click',function(){
+// // timer.style.display='block'
+// // })
 
 
-// const weather = async() =>{
-//   const url = 'https://forecast9.p.rapidapi.com/datesCreated[';
-//   const options = {
-//     method: 'GET',
-//     headers: {
-//       'X-RapidAPI-Key': 'ebfa7d7606msha3da6e75be3f545p12cb31jsn71135121e0a4',
-//       'X-RapidAPI-Host': 'forecast9.p.rapidapi.com'
-//     }
-//   };
+// // const weather = async() =>{
+// //   const url = 'https://forecast9.p.rapidapi.com/datesCreated[';
+// //   const options = {
+// //     method: 'GET',
+// //     headers: {
+// //       'X-RapidAPI-Key': 'ebfa7d7606msha3da6e75be3f545p12cb31jsn71135121e0a4',
+// //       'X-RapidAPI-Host': 'forecast9.p.rapidapi.com'
+// //     }
+// //   };
   
-//   try {
-//     const response = await fetch(url, options);
-//     const result = await response.text();
-//     console.log(result);
-//   } catch (error) {
-//     console.error(error);
-//   }
-// }
+// //   try {
+// //     const response = await fetch(url, options);
+// //     const result = await response.text();
+// //     console.log(result);
+// //   } catch (error) {
+// //     console.error(error);
+// //   }
+// // }
 
-// weather()
-
-
-// let units = "metric"
+// // weather()
 
 
-//  function fetcher(){
-// fetch(`https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${API_KEY}&units=metric`)
-// .then(response => {
-//  return  response.json()
+// // let units = "metric"
+
+
+// //  function fetcher(){
+// // fetch(`https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${API_KEY}&units=metric`)
+// // .then(response => {
+// //  return  response.json()
+// // })
+// // .then((data) =>{
+// // console.log(data);
+// // })
+// // }
+
+// // fetcher()
+
+// let locationSpan = document.querySelector('.location')
+// let search = document.querySelector('.search')
+// let humid = document.querySelector('.humid')
+
+
+
+// var submit = document.querySelector('.submit')
+
+// const HandleSubmit = (e) =>{
+//   e.preventDefault()
+//   const API_KEY = '50e011a9acc81ee3ed08622ff8255a25'
+// let  currentCity = search.value
+// var weatherAPI = `https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${API_KEY}&units=metric`
+
+// fetch(weatherAPI)
+// .then((response) =>{
+// return response.json()
 // })
 // .then((data) =>{
-// console.log(data);
+//   console.log(data);
+//   locationSpan.innerHTML = data.name
+//   humid.innerHTML = data.main.humidity + '%'
 // })
-// }
-
-// fetcher()
-
-let locationSpan = document.querySelector('.location')
-let search = document.querySelector('.search')
-let humid = document.querySelector('.humid')
-
-
-
-var submit = document.querySelector('.submit')
-
-const HandleSubmit = (e) =>{
-  e.preventDefault()
-  const API_KEY = '50e011a9acc81ee3ed08622ff8255a25'
-let  currentCity = search.value
-var weatherAPI = `https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${API_KEY}&units=metric`
-
-fetch(weatherAPI)
-.then((response) =>{
-return response.json()
-})
-.then((data) =>{
-  console.log(data);
-  locationSpan.innerHTML = data.name
-  humid.innerHTML = data.main.humidity + '%'
-})
    
      
-    // console.log( search.value.length)
+//     // console.log( search.value.length)
 
-}
-
-submit.addEventListener('click',HandleSubmit)
-
-document.querySelector('.icon-1').addEventListener('click',function(){
-  document.querySelector('.icon-2').style.display ='block'
-  document.querySelector('.icon-1').style.display ='none'
-})
-document.querySelector('.icon-2').addEventListener('click',function(){
-  document.querySelector('.icon-1').style.display ='block'
-  document.querySelector('.icon-2').style.display ='none'
-})
-
-
-
-
-// if(search.value.length < 8){
-//   alert('vscvsn')
 // }
-//input 
-//class
+
+// submit.addEventListener('click',HandleSubmit)
+
+// document.querySelector('.icon-1').addEventListener('click',function(){
+//   document.querySelector('.icon-2').style.display ='block'
+//   document.querySelector('.icon-1').style.display ='none'
+// })
+// document.querySelector('.icon-2').addEventListener('click',function(){
+//   document.querySelector('.icon-1').style.display ='block'
+//   document.querySelector('.icon-2').style.display ='none'
+// })
+
+
+
+
+// // if(search.value.length < 8){
+// //   alert('vscvsn')
+// // }
+// //input 
+// //class
+
+// //git init
+// // git add .
+// // git commit -m ""
+// //git push origin main
+// //git push --set-upstream origin main 
+// // git clone https://github.com/Sahar009/Blopia-frontend09.git
+
+
+
+// function Register(){
+//   var UserEmail =document.getElementById('email').value
+//   var UserPassword =document.getElementById('password').value
+//   var Cpassword =document.getElementById('cPassword').value
+// var regex = "\^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+
+// if(!(regex.test(UserPassword))){
+// alert(`At least one upper case English letter, 
+// At least one lower case English letter, 
+// At least one digit,
+// At least one special character, 
+// Minimum eight in length `)
+// }
+//   var localStorageDetails = localStorage.getItem('email')
+//   if (UserEmail ===  localStorageDetails){
+//     alert('email already exist ')
+//   }
+//   // other validations 
+
+//   localStorage.setItem('email',UserEmail)
+// }
+
+
+
+// localStorage.setItem('March','Appclick student')
+
+// var storedItem = localStorage.getItem('March')
+
+// console.log(storedItem);
+
+// var products = [{
+//   id:1,
+// name:'Arthemeter lufanthrin',
+// price:2000,
+// beforePrice:2500,
+// quantity:20,
+// description:'aesdfghjkler',
+// img:'https://'
+// },{
+
+// }]
+// // cloudinary 
+
+var phone = [{
+  title:'iphone',
+  image:'https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aXBob25lfGVufDB8fDB8fHww',
+  description:'a kdkdkdkdkdk'
+
+}]
+
+console.log(phone.length);
+
+phone.push({
+  title:'shirt',
+  image:''
+})
+phone.pop()
+console.log(phone.length);
+
+localStorage.setItem('product',phone)
+var all_product=localStorage.getItem('product')
+
+
