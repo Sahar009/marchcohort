@@ -22,14 +22,24 @@
 }
 #add-task:hover{
     background-color: pink;
-    color: black;
+    color: #000000;
+   
 }
-.task-list{
-    display: block;
+#task-list div{
+    width: 300px;
+   
+    display: flex;
+    justify-content: end;
 }
-.task-list li{
-    display: block;
+#task-list li{
+    margin: 5px;
+    list-style: none;
     color: red;
+}
+#task-list button{
+   border: none;
+   border-radius: 5px;
+  
 }
 
 .Remove-btn{

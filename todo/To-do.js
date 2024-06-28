@@ -4,7 +4,7 @@ $('#add-task').click(function(){
     // console.log(taskText);
     // validate input value
     if(taskText !== ""){
-        $('#task-list').append(`<li>${taskText} <button class="Remove-btn">Remove</button></li>`)
+        $('#task-list').append(`<li>${taskText} <div><button class="Remove-btn">Remove</button></div></li>`)
         $('#new-task').val('')
     }
     else{
@@ -12,7 +12,10 @@ $('#add-task').click(function(){
     }
 })
 
-
-
+$("#task-list").on('click','.Remove-btn',function(e){
+    $(this).closest('li').remove();
+    // console.log('bttn');
+})
 
 })
+
